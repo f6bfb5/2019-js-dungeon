@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  Javascript Dungeon 5F */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin flexDir($d: row) {
+  display: flex;
+  flex-flow: $d;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// * {
+//   outline: 1px solid #000;
+// }
+
+#app {
+  margin: 40px 85px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+body {
+  font-family: "Open Sans", "Noto Sans CJK TC";
+  background-color: #f0f0f0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+.row {
+  @include flexDir(row);
+}
+.column {
+  @include flexDir(column);
+}
+.header {
+  @include size(1100px, 135px);
+}
+.title {
+  @include size(350px, 100%);
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 8px;
+  }
+  select {
+    @include size(100%, 56px);
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid #000;
+    box-sizing: border-box;
+  }
+}
+.info {
+  @include size(730px, 110px);
+  margin-top: 13px;
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  span {
+    @include size(121.67px, 54px);
+    @include flexCenter;
+    padding: 0 12px;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    box-sizing: border-box;
+    &:not(:last-child) {
+      border-right: 3px solid #000;
+    }
+  }
+}
+.section {
+  width: 1100px;
+  h1 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+  span {
+    font-size: 16px;
+  }
+  .city {
+    @include flexCenter;
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+  .line {
+    width: 780px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 4px dotted #000;
+    box-sizing: border-box;
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  .card {
+    cursor: pointer;
+  }
+}
+.card {
+  width: 350px;
+  margin-bottom: 32px;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  &.main {
+    height: 535px;
+  }
+  &:nth-child(2n + 1) {
+    margin-right: 25px;
+  }
+}
+.card-header {
+  height: 97px;
+  h2 {
+    @include flexCenter;
+    width: 160px;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 36px;
+    border-right: 3px solid #000;
+    box-sizing: border-box;
+  }
+  span {
+    @include flexCenter;
+    width: 190px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+.card-body {
+  height: 438px;
+  padding: 16px;
+  border-top: 3px solid #000;
+  box-sizing: border-box;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  h4 {
+    margin-left: 8px;
+    font-weight: regular;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  span {
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  &:not(:first-child) {
+    padding-top: 16px;
+  }
+  &:not(:last-child) {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+  }
+}
+.status-aqi1 {
+  background-color: #95f084;
+}
+
+.status-aqi2 {
+  background-color: #ffe695;
+}
+
+.status-aqi3 {
+  background-color: #ffaf6a;
+}
+
+.status-aqi4 {
+  background-color: #ff5757;
+}
+
+.status-aqi5 {
+  background-color: #9777ff;
+}
+
+.status-aqi6 {
+  background-color: #ad1774;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.footer {
+  padding: 6px 85px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  span:nth-child(1) {
+    color: white;
+  }
+  span:nth-child(2) {
+    color: #f0f0f0;
+  }
+}

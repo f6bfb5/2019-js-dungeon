@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Dungeon 3F</title>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="calculator">
+        <div class="top">
+          <input class="input" disabled="disabled" v-model="getInput" />
+          <input class="result" disabled="disabled" v-model="result" />
+        </div>
+        <div class="bottom">
+          <div class="row">
+            <span @click.prevent="setInput('7')">7</span
+            ><span @click.prevent="setInput('8')">8</span
+            ><span @click.prevent="setInput('9')">9</span
+            ><span @click.prevent="setInput('/')">÷</span>
+          </div>
+          <div class="row">
+            <span @click.prevent="setInput('4')">4</span
+            ><span @click.prevent="setInput('5')">5</span
+            ><span @click.prevent="setInput('6')">6</span
+            ><span @click.prevent="setInput('*')">×</span>
+          </div>
+          <div class="row">
+            <span @click.prevent="setInput('1')">1</span
+            ><span @click.prevent="setInput('2')">2</span
+            ><span @click.prevent="setInput('3')">3</span
+            ><span @click.prevent="setInput('+')">+</span>
+          </div>
+          <div class="row">
+            <span @click.prevent="setInput('0')">0</span
+            ><span @click.prevent="setInput('00')">00</span
+            ><span @click.prevent="setInput('.')">.</span
+            ><span @click.prevent="setInput('-')">-</span>
+          </div>
+          <div class="row">
+            <span @click.prevent="allClear">AC</span
+            ><span @click.prevent="back">⌫</span
+            ><span class="equal" @click.prevent="calc">=</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+  <script src="index.js"></script>
+</html>

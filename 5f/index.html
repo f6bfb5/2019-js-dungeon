@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="header row">
+        <div class="title column">
+          <h1>空氣品質指標(AQI)</h1>
+          <select name="" id="" v-model="filter">
+            <option value="" disabled="">請選擇地區</option>
+            <option :value="item" v-for="item in location">{{ item }}</option>
+          </select>
+        </div>
+        <div class="info column">
+          <div class="row">
+            <span class="status-aqi1">0~50</span
+            ><span class="status-aqi2">51~100</span
+            ><span class="status-aqi3">101~150</span
+            ><span class="status-aqi4">151~200</span
+            ><span class="status-aqi5">201~300</span
+            ><span class="status-aqi6">301~400</span>
+          </div>
+          <div class="row">
+            <span class="white">良好</span><span class="white">普通</span
+            ><span class="white">對敏感族群不健康</span
+            ><span class="white">對所有族群不健康</span
+            ><span class="white">非常不健康</span
+            ><span class="white">危害</span>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="city row">
+          <h1>{{ filteredCity[0].County }}</h1>
+          <div class="line"></div>
+          <span>{{ filteredCity[0].PublishTime }} 更新</span>
+        </div>
+        <div class="row">
+          <div class="card main column">
+            <div class="card-header row">
+              <h2 class="white">{{ active.SiteName }}</h2>
+              <span :class="active.class">{{ active.AQI }}</span>
+            </div>
+            <div class="card-body white">
+              <div class="card-content">
+                <h3>臭氧</h3>
+                <h4>O3 (ppb)</h4>
+                <span>{{ active.O3 }}</span>
+              </div>
+              <div class="card-content">
+                <h3>懸浮微粒</h3>
+                <h4>PM10 (μg/m³)</h4>
+                <span>{{ active.PM10 }}</span>
+              </div>
+              <div class="card-content">
+                <h3>細懸浮微粒</h3>
+                <h4>PM2.5 (μg/m³)</h4>
+                <span>{{ active['PM2.5'] }}</span>
+              </div>
+              <div class="card-content">
+                <h3>一氧化碳</h3>
+                <h4>CO (ppm)</h4>
+                <span>{{ active.CO }}</span>
+              </div>
+              <div class="card-content">
+                <h3>二氧化硫</h3>
+                <h4>SO2 (ppb)</h4>
+                <span>{{ active.SO2 }}</span>
+              </div>
+              <div class="card-content">
+                <h3>二氧化氮</h3>
+                <h4>NO2 (ppb)</h4>
+                <span>{{ active.NO2 }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div
+              class="card"
+              v-for="(item, key) in filteredCity"
+              :key="key"
+              @click="clickSite(item.SiteName)"
+            >
+              <div class="card-header row">
+                <h2 class="white">{{ item.SiteName }}</h2>
+                <span :class="item.class">{{ item.AQI }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span>資料來源：行政院環境保護署</span
+      ><span>Copyright © 2019 HexSchool. All rights reserved.</span>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+  <script src="./index.js"></script>
+</html>

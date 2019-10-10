@@ -1,0 +1,30 @@
+#app
+  .calculator
+    .top
+      input.input(disabled="disabled", v-model="getInput")
+      input.result(disabled="disabled", v-model="result")
+    .bottom
+      .row
+        span(@click.prevent="setInput('7')") 7
+        span(@click.prevent="setInput('8')") 8
+        span(@click.prevent="setInput('9')") 9
+        span(@click.prevent="setInput('/')") ÷
+      .row
+        span(@click.prevent="setInput('4')") 4
+        span(@click.prevent="setInput('5')") 5
+        span(@click.prevent="setInput('6')") 6
+        span(@click.prevent="setInput('*')") ×
+      .row
+        span(@click.prevent="setInput('1')") 1
+        span(@click.prevent="setInput('2')") 2
+        span(@click.prevent="setInput('3')") 3
+        span(@click.prevent="setInput('+')") +
+      .row
+        span(@click.prevent="setInput('0')") 0
+        span(@click.prevent="setInput('00')") 00
+        span(@click.prevent="setInput('.')") .
+        span(@click.prevent="setInput('-')") -
+      .row
+        span(@click.prevent="allClear") AC
+        span(@click.prevent="back") ⌫
+        span.equal(@click.prevent="calc") =
