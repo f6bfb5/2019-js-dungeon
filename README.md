@@ -1,7 +1,5 @@
-# JS 地下城
-
-[題目連結](https://www.udemy.com/js-underground/)
-[Javascript Dungeon JS 地下城](https://medium.com/javascriptdeugonchallenge)
+- [題目連結](https://www.udemy.com/js-underground/)
+- [Javascript Dungeon JS 地下城](https://medium.com/javascriptdeugonchallenge)
 
 ## 撰寫 BLOG 技術文章 (推薦 medium)
 
@@ -29,7 +27,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/256981fc-ef65-4d9b-773c-45d8ef0353c6-5358/screen/50fba855-bde7-4771-b73c-3fd839418cf0/multiplication-chart/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/256981fc-ef65-4d9b-773c-45d8ef0353c6-5358/screen/50fba855-bde7-4771-b73c-3fd839418cf0/multiplication-chart/)
 
 ## [2F - 時鐘](https://f6bfb5.github.io/2019-js-dungeon/2f/)
 
@@ -45,7 +43,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/43be2f02-1d11-4dfb-4e3d-5c4df1df3896-358f/screen/e7b79d5d-37bb-41f7-8ca2-9df3811589e9/003-clock/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/43be2f02-1d11-4dfb-4e3d-5c4df1df3896-358f/screen/e7b79d5d-37bb-41f7-8ca2-9df3811589e9/003-clock/)
 
 ## [3F - 計算機](https://f6bfb5.github.io/2019-js-dungeon/3f/)
 
@@ -59,7 +57,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/9dc81ec7-dd2e-46f6-5f76-5a64df413c97-ebf9/screen/3c3e8e4f-df7d-480d-8236-e60803d4645f/002-calculator/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/9dc81ec7-dd2e-46f6-5f76-5a64df413c97-ebf9/screen/3c3e8e4f-df7d-480d-8236-e60803d4645f/002-calculator/)
 
 ## [4F - 時區](https://f6bfb5.github.io/2019-js-dungeon/4f/)
 
@@ -75,7 +73,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/6f0eb277-9976-489c-5668-95757eccfa55-193f/screen/e900dd75-7b6c-4a48-bbd6-789c4e100856/007-world-clock/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/6f0eb277-9976-489c-5668-95757eccfa55-193f/screen/e900dd75-7b6c-4a48-bbd6-789c4e100856/007-world-clock/)
 
 ## [5F - 全台空氣指標儀表板](https://f6bfb5.github.io/2019-js-dungeon/5f/)
 
@@ -91,7 +89,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/1e214feb-9f65-4c79-5adb-6919c1c7b8d7-6810/screen/dfcfc300-ec0f-4b70-bb23-7fc6be052a88/013-AQI/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/1e214feb-9f65-4c79-5adb-6919c1c7b8d7-6810/screen/dfcfc300-ec0f-4b70-bb23-7fc6be052a88/013-AQI/)
 
 ### 撰寫 BLOG 技術文章
 
@@ -117,7 +115,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/778c6e57-07eb-4499-69da-779013227c65-01bd/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/778c6e57-07eb-4499-69da-779013227c65-01bd/)
 
 ### 撰寫 BLOG 技術文章
 
@@ -149,7 +147,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/07109501-5cfa-494b-5338-e76e97b3fba2-7121/screen/6fcf7e9a-ce01-497d-a677-8cc02b883712/canvas-panel-open/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/07109501-5cfa-494b-5338-e76e97b3fba2-7121/screen/6fcf7e9a-ce01-497d-a677-8cc02b883712/canvas-panel-open/)
 
 ### 撰寫 BLOG 技術文章
 
@@ -191,7 +189,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/c8786c93-bea8-4f98-5f86-0899c78d7e9f-be49/screen/74431524-d89f-4151-80ed-294798a78043/start/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/c8786c93-bea8-4f98-5f86-0899c78d7e9f-be49/screen/74431524-d89f-4151-80ed-294798a78043/start/)
 
 ## 9F - 抽獎轉盤
 
@@ -267,7 +265,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/e7136641-75fd-4359-5960-f092bdfaa633-9122/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/e7136641-75fd-4359-5960-f092bdfaa633-9122/)
 
 ## 10F - Chrome 應用程式 (幹話產生器)
 
@@ -297,7 +295,7 @@
 
 ### 下載資源
 
-[UI 線上設計稿](https://xd.adobe.com/spec/8a78de7b-86f0-4e48-4c3d-3ce613a59358-fc49/)
+- [UI 線上設計稿](https://xd.adobe.com/spec/8a78de7b-86f0-4e48-4c3d-3ce613a59358-fc49/)
 
 ## 11F - 燈箱效果
 
